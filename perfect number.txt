@@ -1,0 +1,24 @@
+using System;
+class HelloWorld{
+  static void Main() {
+    Console.Write("the start: ");
+    double n1 =double.Parse(Console.ReadLine());
+    Console.Write("the end: ");
+    double n2= double.Parse(Console.ReadLine());
+    for(double i = n1; i<= n2; i++){
+          double counter= 0;
+        for(double y = 1; y < i; y++){
+            
+            if(i % y == 0){
+                counter += y;
+            }
+            
+        }
+        if(i ==counter && i != 0){
+           //perfect numbers 
+            Console.WriteLine(i);
+        }
+    }
+    
+  }
+}

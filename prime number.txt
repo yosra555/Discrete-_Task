@@ -1,0 +1,43 @@
+using System;
+namespace HelloWorld
+{  
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        Console.Write("the start:  ");
+        int n1 = int.Parse(Console.ReadLine());
+        Console.Write("the end:  ");
+        int n2 = int.Parse(Console.ReadLine());
+        for (int i = n1; i <= n2; i++)
+        {
+            bool isprime = false;
+            for (int y = 2; y <= Math.Sqrt(i); y++)
+            {
+                if (i % y == 0)
+                {
+                    isprime = false;
+                    break;
+                }
+                isprime = true;
+
+            }
+            if (isprime == true)
+            {
+                // prime numbers
+                Console.WriteLine(i);
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+}
