@@ -28,16 +28,7 @@ class Program
                 // prime numbers
                 Console.WriteLine(i);
             }
-
         }
     }
 }
-
-
-
-
-
-
-
-
 }
